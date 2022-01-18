@@ -1,0 +1,7 @@
+﻿  win32_platform.cpp
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(47,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(48,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(49,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(50,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\win32_platform.cpp(58,5): warning C4007: 'WinMain': must be '__stdcall'
+  PongPlusPlus.vcxproj -> C:\Users\James\Documents\Programming\C++\PongPlusPlus\Debug\PongPlusPlus.exe
