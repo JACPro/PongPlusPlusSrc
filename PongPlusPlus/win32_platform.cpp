@@ -1,5 +1,6 @@
 #include "utils.cpp"
 #include <windows.h>
+#include "platform_common.cpp"
 
 global_variable bool running = true;
 
@@ -14,6 +15,7 @@ struct Render_State
 global_variable Render_State render_state;
 
 #include "renderer.cpp"
+#include "game.cpp"
 
 LRESULT CALLBACK window_callback(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
@@ -55,7 +57,7 @@ LRESULT CALLBACK window_callback(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lPa
 	return result;
 }
 
-int WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd)
+int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd)
 {
 	//1. Create Window Class
 	WNDCLASS window_class = {};
@@ -70,29 +72,70 @@ int WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int 
 	HWND window = CreateWindow(window_class.lpszClassName, TEXT("PongPlusPlus"), WS_OVERLAPPEDWINDOW | WS_VISIBLE, CW_USEDEFAULT, CW_USEDEFAULT, 1280, 720, 0, 0, hInstance, 0);
 	HDC hdc = GetDC(window);
 
+	Input input = {};
+
+	//Manage framerate 
+	float delta_time = 0.01666f;
+	LARGE_INTEGER frame_start_time;
+	QueryPerformanceCounter(&frame_start_time);
+	LARGE_INTEGER frame_end_time;
+	LARGE_INTEGER tick_frequency;
+	QueryPerformanceFrequency(&tick_frequency);
+
 	while (running)
 	{
+		
+
 		//Gather Input
 		MSG message;
+
+		for (int i = 0; i < BUTTON_COUNT; i++)
+		{
+			input.buttons[i].changed = false;
+		}
+
 		while (PeekMessage(&message, window, 0, 0, PM_REMOVE))
 		{
-			TranslateMessage(&message);
-			DispatchMessage(&message);
+			switch (message.message)
+			{
+				case WM_KEYUP:
+				case WM_KEYDOWN:
+				{
+					u32 vk_code = (u32)message.wParam;
+					bool is_down = (message.message == WM_KEYDOWN);
+
+					switch (vk_code)
+					{
+#define process_button(b, vk)\
+case vk: {\
+input.buttons[b].is_down = is_down;\
+input.buttons[b].changed=true;\
+} break;
+						process_button(BUTTON_UP, VK_UP);
+						process_button(BUTTON_DOWN, VK_DOWN);
+						process_button(BUTTON_LEFT, VK_LEFT);
+						process_button(BUTTON_RIGHT, VK_RIGHT);
+						process_button(BUTTON_SHIFT, VK_SHIFT);
+					}
+				} break;
+				default:
+				{
+					TranslateMessage(&message);
+					DispatchMessage(&message);
+				} break;
+			}
+			
 		}
 
 		//Process Input and Simulate Game State
-		ClearScreen(0x7de1ff);
-		DrawRect(0, 0, 10, 10, 0xfc6358);
-		//Bottom left
-		DrawRect(-40, -40, 5, 5, 0xfc6358);
-		//Top left
-		DrawRect(-40, 40, 7, 7, 0xfc6358);
-		//Top right
-		DrawRect(40, 40, 5, 5, 0xfc6358);
-		//Bottom right
-		DrawRect(40, -40, 7, 7, 0xfc6358);
+		SimulateGame(&input, delta_time);
 
 		//Render Output
 		StretchDIBits(hdc, 0, 0, render_state.width, render_state.height, 0, 0, render_state.width, render_state.height, render_state.memory, &render_state.bitmap_info, DIB_RGB_COLORS, SRCCOPY);
+
+		//Update delta_time
+		QueryPerformanceCounter(&frame_end_time);
+		delta_time = (float)(frame_end_time.QuadPart - frame_start_time.QuadPart) / tick_frequency.QuadPart;
+		frame_start_time = frame_end_time;
 	}
 }
