@@ -8,11 +8,16 @@ enum
 {
 	BUTTON_UP,
 	BUTTON_DOWN,
-	BUTTON_LEFT,
-	BUTTON_RIGHT,
-	BUTTON_SHIFT,
+	BUTTON_W,
+	BUTTON_S,
 
 	BUTTON_COUNT
+};
+
+enum PLAYERS
+{
+	PLAYER_1,
+	PLAYER_2
 };
 
 struct Input

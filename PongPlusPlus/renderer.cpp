@@ -40,7 +40,7 @@ DrawRect(float x, float y, float half_size_x, float half_size_y, u32 colour)
 	half_size_y *= render_state.height * render_scale;
 
 	x += render_state.width / 2.f;
-	y += render_state.height/ 2.f;
+	y += render_state.height / 2.f;
 
 	//Change to pixels
 	int x0 = x - half_size_x;
