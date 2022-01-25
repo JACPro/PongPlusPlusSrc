@@ -50,3 +50,98 @@ DrawRect(float x, float y, float half_size_x, float half_size_y, u32 colour)
 
 	DrawRectInPixels(x0, y0, x1, y1, colour);
 }
+
+internal void
+DrawNumber(int number, float x_pos, float y_pos, float size, u32 colour)
+{
+	float half_size = size * 0.5f;
+	bool drawn_first_digit = false;
+	while (number || !drawn_first_digit)
+	{
+		drawn_first_digit = true;
+
+		int digit = number % 10;
+		number /= 10;
+
+		switch (digit) {
+			case 0: {
+				DrawRect(x_pos - size, y_pos, half_size, 2.5f * size, colour);
+				DrawRect(x_pos + size, y_pos, half_size, 2.5f * size, colour);
+				DrawRect(x_pos, y_pos + size * 2.f, half_size, half_size, colour);
+				DrawRect(x_pos, y_pos - size * 2.f, half_size, half_size, colour);
+				x_pos -= size * 4.f;
+			} break;
+
+			case 1: {
+				DrawRect(x_pos + size, y_pos, half_size, 2.5f * size, colour);
+				x_pos -= size * 2.f;
+			} break;
+
+			case 2: {
+				DrawRect(x_pos, y_pos + size * 2.f, 1.5f * size, half_size, colour);
+				DrawRect(x_pos, y_pos, 1.5f * size, half_size, colour);
+				DrawRect(x_pos, y_pos - size * 2.f, 1.5f * size, half_size, colour);
+				DrawRect(x_pos + size, y_pos + size, half_size, half_size, colour);
+				DrawRect(x_pos - size, y_pos - size, half_size, half_size, colour);
+				x_pos -= size * 4.f;
+			} break;
+
+			case 3: {
+				DrawRect(x_pos - half_size, y_pos + size * 2.f, size, half_size, colour);
+				DrawRect(x_pos - half_size, y_pos, size, half_size, colour);
+				DrawRect(x_pos - half_size, y_pos - size * 2.f, size, half_size, colour);
+				DrawRect(x_pos + size, y_pos, half_size, 2.5f * size, colour);
+				x_pos -= size * 4.f;
+			} break;
+
+			case 4: {
+				DrawRect(x_pos + size, y_pos, half_size, 2.5f * size, colour);
+				DrawRect(x_pos - size, y_pos + size, half_size, 1.5f * size, colour);
+				DrawRect(x_pos, y_pos, half_size, half_size, colour);
+				x_pos -= size * 4.f;
+			} break;
+
+			case 5: {
+				DrawRect(x_pos, y_pos + size * 2.f, 1.5f * size, half_size, colour);
+				DrawRect(x_pos, y_pos, 1.5f * size, half_size, colour);
+				DrawRect(x_pos, y_pos - size * 2.f, 1.5f * size, half_size, colour);
+				DrawRect(x_pos - size, y_pos + size, half_size, half_size, colour);
+				DrawRect(x_pos + size, y_pos - size, half_size, half_size, colour);
+				x_pos -= size * 4.f;
+			} break;
+
+			case 6: {
+				DrawRect(x_pos + half_size, y_pos + size * 2.f, size, half_size, colour);
+				DrawRect(x_pos + half_size, y_pos, size, half_size, colour);
+				DrawRect(x_pos + half_size, y_pos - size * 2.f, size, half_size, colour);
+				DrawRect(x_pos - size, y_pos, half_size, 2.5f * size, colour);
+				DrawRect(x_pos + size, y_pos - size, half_size, half_size, colour);
+				x_pos -= size * 4.f;
+			} break;
+
+			case 7: {
+				DrawRect(x_pos + size, y_pos, half_size, 2.5f * size, colour);
+				DrawRect(x_pos - half_size, y_pos + size * 2.f, size, half_size, colour);
+				x_pos -= size * 4.f;
+			} break;
+
+			case 8: {
+				DrawRect(x_pos - size, y_pos, half_size, 2.5f * size, colour);
+				DrawRect(x_pos + size, y_pos, half_size, 2.5f * size, colour);
+				DrawRect(x_pos, y_pos + size * 2.f, half_size, half_size, colour);
+				DrawRect(x_pos, y_pos - size * 2.f, half_size, half_size, colour);
+				DrawRect(x_pos, y_pos, half_size, half_size, colour);
+				x_pos -= size * 4.f;
+			} break;
+
+			case 9: {
+				DrawRect(x_pos - half_size, y_pos + size * 2.f, size, half_size, colour);
+				DrawRect(x_pos - half_size, y_pos, size, half_size, colour);
+				DrawRect(x_pos - half_size, y_pos - size * 2.f, size, half_size, colour);
+				DrawRect(x_pos + size, y_pos, half_size, 2.5f * size, colour);
+				DrawRect(x_pos - size, y_pos + size, half_size, half_size, colour);
+				x_pos -= size * 4.f;
+			} break;
+		}
+	}
+}
