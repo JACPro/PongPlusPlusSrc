@@ -16,14 +16,15 @@ ___
 This game was made with help from an excellent YouTube tutorial series by Dan Zaidan, which can be found [here.](https://www.youtube.com/playlist?list=PL7Ej6SUky135IAAR3PFCFyiVwanauRqj3)
 ___
 
-<!---
 After completing the tutorial, I was able to harness my learning to develop my own improvements to the game:
-
+* Even text spacing regardless of letter width
+<!---
 * TODO - Ball speed increases the longer a round continues
 * TODO - AI tries to hit the ball with the end of the pad instead of the middle to throw the player off
 * TODO - Different AI difficulties
 * TODO - Hard AI difficulty calculates the position it needs to be in to hit the ball as soon as the player hits it (rather than chasing the ball based only on its current position)
 * TODO - Choice of colour/theme options
+* TODO - Sound FX
 * TODO - Tiny paddles mode
 * TODO - Round paddles mode
 * TODO - Graphics mode
