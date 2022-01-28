@@ -1,7 +1,0 @@
-- Ball speed increase with successive hits (reset on goal or restart)
-- AI should try to hit the ball with the end of the pad 
-- Difficult AI should predict the position it will need to be in to hit the ball based on the position/angle after the player's previous hit
-- Add various colour/theme options
-- Tiny paddles option
-- Round paddles option
-- Graphical version?

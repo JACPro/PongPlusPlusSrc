@@ -3,9 +3,11 @@ C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(
 C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(47,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
 C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(48,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
 C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(49,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(81,78): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(92,80): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
 C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(5,64): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(81,47): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(81,22): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(92,49): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(92,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(199,89): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(229,80): warning C4305: 'argument': truncation from 'double' to 'float'
 C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\win32_platform.cpp(60,5): warning C4007: 'WinMain': must be '__stdcall'
   PongPlusPlus.vcxproj -> C:\Users\James\Documents\Programming\C++\PongPlusPlus\Debug\PongPlusPlus.exe
