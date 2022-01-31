@@ -12,9 +12,29 @@ struct Colour_Scheme
 };
 
 Colour_Scheme col_scheme_arr [3] = { 
-	0xee7878,0xc82828,0x82EE57,
-	0x7d95dd,0x1f4bcd,0xdf2f2f,
-	0x74b385,0x25783b,0x00ffd8 
+	0xee7878,0xc82828,0x82EE57, //red
+	0x7d95dd,0x1f4bcd,0xdf2f2f, //blue
+	0x74b385,0x25783b,0x00ffd8  //green
+};
+
+enum
+{
+	RED,
+	BLUE,
+	GREEN
+};
+
+enum Paddle
+{
+	STANDARD,
+	TINY
+};
+
+enum AiDifficulty
+{
+	EASY,
+	MEDIUM,
+	HARD
 };
 
 enum

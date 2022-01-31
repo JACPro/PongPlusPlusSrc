@@ -1,6 +1,9 @@
 #include "utils.cpp"
 #include <windows.h>
+#include <thread>
 #include "platform_common.cpp"
+#include <time.h>
+#include <array>
 
 global_variable bool running = true;
 
@@ -16,6 +19,33 @@ global_variable Render_State render_state;
 
 #include "renderer.cpp"
 #include "game.cpp"
+
+std::array<int, 7> c_maj { 
+	131, //C3 
+	//139, //C#3
+	147, //D3
+	//156, //D#3
+	165, //E3
+	175, //F3
+	//185, //F#3
+	196, //G3
+	//208, //G#3
+	220, //A3
+	//233, //A#3
+	247 //B3
+};
+
+int GetRandomNote()
+{
+	srand(time(NULL));
+	return c_maj[rand() % 7];
+}
+
+void PlayBeep(int duration)
+{
+	std::thread t1 (Beep, GetRandomNote(), duration);
+	t1.detach();
+}
 
 LRESULT CALLBACK window_callback(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
@@ -71,7 +101,7 @@ int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int n
 	RegisterClass(&window_class);
 
 	//3. Create Window
-	HWND window = CreateWindow(window_class.lpszClassName, TEXT("Pong Plus Plus"), WS_OVERLAPPEDWINDOW | WS_VISIBLE, CW_USEDEFAULT, CW_USEDEFAULT, 1280, 720, 0, 0, hInstance, 0);
+	HWND window = CreateWindow(window_class.lpszClassName, TEXT("Pong++"), WS_OVERLAPPEDWINDOW | WS_VISIBLE, CW_USEDEFAULT, CW_USEDEFAULT, 1280, 720, 0, 0, hInstance, 0);
 	HDC hdc = GetDC(window);
 
 	Input input = {};
@@ -133,7 +163,7 @@ input.buttons[b].changed = is_down == input.buttons[b].is_down;\
 		}
 
 		//Process Input and Simulate Game State
-		SimulateGame(&input, delta_time);
+		SimulateGame(&input, delta_time, &PlayBeep);
 
 		//Render Output
 		StretchDIBits(hdc, 0, 0, render_state.width, render_state.height, 0, 0, render_state.width, render_state.height, render_state.memory, &render_state.bitmap_info, DIB_RGB_COLORS, SRCCOPY);

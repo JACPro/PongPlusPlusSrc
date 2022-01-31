@@ -370,6 +370,14 @@ const char* letters[][7] = {
 	" 0",
 	"0",
 	"0",
+
+	"   0   ",
+	"   0   ",
+	"   0   ",
+	"0000000",
+	"   0   ",
+	"   0   ",
+	"   0   ",
 };
 
 internal void 
@@ -383,14 +391,18 @@ DrawSimpleText(const char* text, float x_pos, float y_pos, float line_width, u32
 	{
 		if (*text != 32)
 		{
-			const char** a_letter = letters[*text - 'A'];
+			const char** letter;
+			if (*text == 47) letter = letters[27]; // / char
+			else if (*text == 46) letter = letters[26]; // . char
+			else if (*text == 43) letter = letters[28]; // + char
+			else letter = letters[*text - 'A'];
 			float x_start = x_pos;
 			letter_width = 0;
 
 			for (int i = 0; i < 7; i++)
 			{
 				int curr_letter_width = 0;
-				const char* column = a_letter[i];
+				const char* column = letter[i];
 				while (*column)
 				{
 					if (*column == '0')
