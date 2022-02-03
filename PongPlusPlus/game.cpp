@@ -79,7 +79,7 @@ AABB_VS_AABB(float p1x, float p1y, float hs1x, float hs1y,
 }
 
 internal void
-RenderMainMenu(Input* input, float delta_time)
+RenderMainMenu(Input* input, float delta_time, std::function<void()> CloseGame)
 {
 	if (pressed(BUTTON_ENTER))
 	{
@@ -92,6 +92,11 @@ RenderMainMenu(Input* input, float delta_time)
 			game_mode = OPTIONS;
 			main_selection = 0;
 		}
+		return;
+	}
+	if (pressed(BUTTON_ESCAPE))
+	{
+		CloseGame();
 		return;
 	}
 
@@ -115,6 +120,16 @@ RenderMainMenu(Input* input, float delta_time)
 internal void
 RenderGameScreen(Input* input, float delta_time, std::function<void(int)> PlaySound)
 {
+	if (pressed(BUTTON_ESCAPE))
+	{
+		player_1_dp = player_2_dp = player_1_p = player_2_p = 0;
+		player_1_score = player_2_score = 0;
+		ball_p_x = ball_p_y = ball_speed_increase = ball_dp_y = 0;
+		ball_dp_x = 140.f;
+		game_mode = MAIN_MENU;
+		return;
+	}
+
 	//Process input
 	float player_2_ddp = 0.f, player_1_ddp = 0.f;
 
@@ -300,7 +315,7 @@ RenderPlayerSelection(Input* input, float delta_time)
 }
 
 internal void
-SimulateGame(Input* input, float delta_time, std::function<void(int)> SoundFunc)
+SimulateGame(Input* input, float delta_time, std::function<void(int)> SoundFunc, std::function<void()> CloseGame)
 {
 	ClearScreen(col_scheme_arr[colour_selection].players);
 	DrawRect(0, 0, arena_half_size_x, arena_half_size_y, col_scheme_arr[colour_selection].arena);
@@ -308,7 +323,7 @@ SimulateGame(Input* input, float delta_time, std::function<void(int)> SoundFunc)
 	switch (game_mode)
 	{
 	case MAIN_MENU:
-		RenderMainMenu(input, delta_time);
+		RenderMainMenu(input, delta_time, CloseGame);
 		break;
 	case GAME:
 		RenderGameScreen(input, delta_time, SoundFunc);

@@ -47,6 +47,12 @@ void PlayBeep(int duration)
 	t1.detach();
 }
 
+void CloseGame()
+{
+	HWND hwnd = GetActiveWindow();
+	DestroyWindow(hwnd);
+}
+
 LRESULT CALLBACK window_callback(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
 	LRESULT result = 0;
@@ -102,6 +108,11 @@ int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int n
 
 	//3. Create Window
 	HWND window = CreateWindow(window_class.lpszClassName, TEXT("Pong++"), WS_OVERLAPPEDWINDOW | WS_VISIBLE, CW_USEDEFAULT, CW_USEDEFAULT, 1280, 720, 0, 0, hInstance, 0);
+	SetWindowLong(window, GWL_STYLE, GetWindowLong(window, GWL_STYLE) & ~WS_OVERLAPPEDWINDOW);
+	MONITORINFO mi = { sizeof(mi) };
+	GetMonitorInfo(MonitorFromWindow(window, MONITOR_DEFAULTTOPRIMARY), &mi);
+	SetWindowPos(window, HWND_TOP, mi.rcMonitor.left, mi.rcMonitor.top, mi.rcMonitor.right - mi.rcMonitor.left, mi.rcMonitor.bottom - mi.rcMonitor.top, SWP_NOOWNERZORDER | SWP_FRAMECHANGED);
+
 	HDC hdc = GetDC(window);
 
 	Input input = {};
@@ -163,7 +174,7 @@ input.buttons[b].changed = is_down == input.buttons[b].is_down;\
 		}
 
 		//Process Input and Simulate Game State
-		SimulateGame(&input, delta_time, &PlayBeep);
+		SimulateGame(&input, delta_time, &PlayBeep, &CloseGame);
 
 		//Render Output
 		StretchDIBits(hdc, 0, 0, render_state.width, render_state.height, 0, 0, render_state.width, render_state.height, render_state.memory, &render_state.bitmap_info, DIB_RGB_COLORS, SRCCOPY);

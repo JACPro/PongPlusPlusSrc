@@ -1,0 +1,196 @@
+﻿  game.cpp
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(21,20): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(21,10): error C2146: syntax error: missing ';' before identifier 'game_mode'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(21,22): error C2825: 'GameMode': must be a class or namespace when followed by '::'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(21,32): error C2510: 'GameMode': left of '::' must be a class/struct/union
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(22,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(22,12): error C2146: syntax error: missing ';' before identifier 'num_players'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(24,25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(24,8): error C2146: syntax error: missing ';' before identifier 'paddle_selection'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(24,27): error C2825: 'Paddle': must be a class or namespace when followed by '::'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(24,35): error C2510: 'Paddle': left of '::' must be a class/struct/union
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(28,10): error C2144: syntax error: 'void' should be preceded by ';'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(29,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(37,37): error C2065: 'paddle_selection': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(39,54): error C2065: 'paddle_selection': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(42,42): error C2065: 'paddle_selection': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(44,55): error C2065: 'paddle_selection': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(48,10): error C2144: syntax error: 'void' should be preceded by ';'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(49,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(48,1): error C2086: 'int internal': redefinition
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(28): message : see declaration of 'internal'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(49,1): error C2182: 'ScoreGoal': illegal use of type 'void'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(49,11): error C2065: 'Players': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(49,19): error C2146: syntax error: missing ')' before identifier 'player'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(50,1): error C2143: syntax error: missing ';' before '{'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(50,1): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(71,10): error C2144: syntax error: 'bool' should be preceded by ';'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(72,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(71,1): error C2086: 'int internal': redefinition
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(28): message : see declaration of 'internal'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(81,10): error C2144: syntax error: 'void' should be preceded by ';'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(82,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(81,1): error C2086: 'int internal': redefinition
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(28): message : see declaration of 'internal'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(82,1): error C2182: 'RenderMainMenu': illegal use of type 'void'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(82,16): error C2065: 'Input': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(82,23): error C2065: 'input': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(82,30): error C2062: type 'float' unexpected
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(83,1): error C2143: syntax error: missing ';' before '{'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(83,1): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(120,10): error C2144: syntax error: 'void' should be preceded by ';'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(121,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(120,1): error C2086: 'int internal': redefinition
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(28): message : see declaration of 'internal'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(121,1): error C2182: 'RenderGameScreen': illegal use of type 'void'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(121,18): error C2065: 'Input': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(121,25): error C2065: 'input': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(121,32): error C2062: type 'float' unexpected
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(122,1): error C2143: syntax error: missing ';' before '{'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(122,1): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(204,10): error C2144: syntax error: 'void' should be preceded by ';'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(205,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(204,1): error C2086: 'int internal': redefinition
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(28): message : see declaration of 'internal'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(205,1): error C2182: 'RenderOptionsMenu': illegal use of type 'void'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(205,19): error C2065: 'Input': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(205,26): error C2065: 'input': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(205,33): error C2062: type 'float' unexpected
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(206,1): error C2143: syntax error: missing ';' before '{'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(206,1): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(282,10): error C2144: syntax error: 'void' should be preceded by ';'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(283,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(282,1): error C2086: 'int internal': redefinition
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(28): message : see declaration of 'internal'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(283,1): error C2182: 'RenderPlayerSelection': illegal use of type 'void'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(283,23): error C2065: 'Input': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(283,30): error C2065: 'input': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(283,37): error C2062: type 'float' unexpected
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(284,1): error C2143: syntax error: missing ';' before '{'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(284,1): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(313,10): error C2144: syntax error: 'void' should be preceded by ';'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(314,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(313,1): error C2086: 'int internal': redefinition
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(28): message : see declaration of 'internal'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(314,1): error C2182: 'SimulateGame': illegal use of type 'void'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(314,14): error C2065: 'Input': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(314,21): error C2065: 'input': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(314,28): error C2062: type 'float' unexpected
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(315,1): error C2143: syntax error: missing ';' before '{'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(315,1): error C2447: '{': missing function header (old-style formal list?)
+  platform_common.cpp
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\platform_common.cpp(9,6): error C3646: 'arena': unknown override specifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\platform_common.cpp(9,11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\platform_common.cpp(10,6): error C3646: 'players': unknown override specifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\platform_common.cpp(10,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\platform_common.cpp(11,6): error C3646: 'text': unknown override specifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\platform_common.cpp(11,10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\platform_common.cpp(15,2): error C2078: too many initializers
+  renderer.cpp
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(1,10): error C2144: syntax error: 'void' should be preceded by ';'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(2,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(2,1): error C2182: 'ClearScreen': illegal use of type 'void'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(2,13): error C2065: 'u32': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(2,17): error C2146: syntax error: missing ')' before identifier 'colour'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(3,1): error C2143: syntax error: missing ';' before '{'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(3,1): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(14,10): error C2144: syntax error: 'void' should be preceded by ';'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(15,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(14,1): error C2086: 'int internal': redefinition
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(1): message : see declaration of 'internal'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(15,50): error C2061: syntax error: identifier 'u32'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(17,20): error C2065: 'render_state': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(17,7): error C3861: 'clamp': identifier not found
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(18,20): error C2065: 'render_state': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(18,7): error C3861: 'clamp': identifier not found
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(19,20): error C2065: 'render_state': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(19,7): error C3861: 'clamp': identifier not found
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(20,20): error C2065: 'render_state': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(20,7): error C3861: 'clamp': identifier not found
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(24,3): error C2065: 'u32': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(24,8): error C2065: 'pixel': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(24,17): error C2065: 'u32': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(24,21): error C2059: syntax error: ')'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(27,5): error C2065: 'pixel': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(27,15): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(32,17): error C2144: syntax error: 'float' should be preceded by ';'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(32,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(34,10): error C2144: syntax error: 'void' should be preceded by ';'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(35,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(34,1): error C2086: 'int internal': redefinition
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(1): message : see declaration of 'internal'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(35,66): error C2061: syntax error: identifier 'u32'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(37,7): error C2065: 'render_state': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(38,7): error C2065: 'render_state': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(39,17): error C2065: 'render_state': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(40,17): error C2065: 'render_state': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(42,7): error C2065: 'render_state': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(43,7): error C2065: 'render_state': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(46,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(47,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(48,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(49,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(51,35): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(54,10): error C2144: syntax error: 'void' should be preceded by ';'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(55,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(54,1): error C2086: 'int internal': redefinition
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(1): message : see declaration of 'internal'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(55,62): error C2061: syntax error: identifier 'u32'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(68,59): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(69,59): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(70,63): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(71,63): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(76,59): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(81,65): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(82,52): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(83,65): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(84,64): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(85,64): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(90,70): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(91,57): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(92,70): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(93,59): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(98,59): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(99,66): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(100,50): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(105,65): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(106,52): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(107,65): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(108,64): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(109,64): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(114,70): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(115,57): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(116,70): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(117,59): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(118,64): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(123,59): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(124,70): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(129,59): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(130,59): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(131,63): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(132,63): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(133,50): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(138,70): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(139,57): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(140,70): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(141,59): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(142,64): error C2065: 'colour': undeclared identifier
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(383,10): error C2144: syntax error: 'void' should be preceded by ';'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(384,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(383,1): error C2086: 'int internal': redefinition
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(1): message : see declaration of 'internal'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(384,78): error C2061: syntax error: identifier 'u32'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(410,52): error C2065: 'colour': undeclared identifier
+  utils.cpp
+  win32_platform.cpp
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(46,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(47,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(48,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\renderer.cpp(49,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(139,130): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(139,55): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(139,48): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(139,23): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(227,79): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\game.cpp(298,88): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\James\Documents\Programming\C++\PongPlusPlus\PongPlusPlus\win32_platform.cpp(40,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
