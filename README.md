@@ -1,5 +1,7 @@
 # Pong Plus Plus
 
+WINDOWS ONLY
+
 This is a version of pong built using pure C++ (no game engines or libraries) to improve my understanding of the language. I gained a more in depth understanding of features I have previously used in game engines (e.g. rendering to a window, tracking delta time, managing collision detection using bounding boxes).
 I also improved my C++ skills and gained became more familiar with programming games from scratch.
 
@@ -21,12 +23,12 @@ After completing the tutorial, I was able to harness my learning to develop my o
 * Ball speed increases the longer a round continues (and player move speed increases to compensate)
 * Choice of colour/theme options
 * Tiny paddles mode
+* Add SFX (random C major note played on each ball hit using Windows' Beep() function)
 
 <!---
 * TODO - AI tries to hit the ball with the end of the pad instead of the middle to throw the player off
 * TODO - Different AI difficulties
 * TODO - Hard AI difficulty calculates the position it needs to be in to hit the ball as soon as the player hits it (rather than chasing the ball based only on its current position)
-* TODO - Sound FX
 * TODO - Round paddles mode
 * TODO - Graphics mode
 -->
