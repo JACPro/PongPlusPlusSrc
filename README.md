@@ -23,6 +23,13 @@ After completing the tutorial, I was able to harness my learning to develop my o
 * Tiny paddles mode
 * Add SFX (random C major note played on each ball hit using Windows' Beep() function)
 
+___
+#### To download the Windows Release Build, [click here](https://github.com/JACPro/PongPlusPlusSrc/raw/main/Release/PongPlusPlus.exe)
+
+#### To view a video demonstration, [click here](https://www.youtube.com/watch?v=hwiaOXxsYjA)
+___
+
+
 <!---
 * TODO - AI tries to hit the ball with the end of the pad instead of the middle to throw the player off
 * TODO - Different AI difficulties
